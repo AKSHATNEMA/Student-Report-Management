@@ -38,16 +38,26 @@ cout<<"\n\nEnter student name: ";
 cin.ignore();
 cin.getline(name,50);
 cout<<"\nAll marks should be out of 100";
+do{
 cout<<"\nEnter marks in English: ";
 cin>>eng_marks;
+}while(!(eng_marks>=0 && eng_marks<=100));
+do{
 cout<<"\nEnter marks in Math:  ";
 cin>>math_marks;
+}while(!(math_marks>=0 && math_marks<=100));
+do{
 cout<<"\nEnter marks in Science:  ";
 cin>>sci_marks;
+}while(!(sci_marks>=0 && sci_marks<=100));
+do{
 cout<<"\nEnter marks in 2nd language:  ";
 cin>>lang2_marks;
+}while(!(lang2_marks>=0 && lang2_marks<=100)); 
+do{
 cout<<"\nEnter marks in Computer science:  ";
 cin>>cs_marks;
+}while(!(cs_marks>=0 && cs_marks<=100));
 calculate();
 }
 void student::showdata() const
